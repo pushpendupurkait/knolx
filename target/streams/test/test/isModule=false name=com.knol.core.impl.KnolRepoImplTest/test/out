@@ -1,0 +1,10 @@
+[0m[[0minfo[0m] [0m[32mKnolRepoImplTest:[0m[0m
+[0m[[0minfo[0m] [0m[32m- Create a knol[0m[0m
+[0m[[0minfo[0m] [0m[32m- FAIL Create a knol[0m[0m
+[0m[[0minfo[0m] [0m[32m- Delete a knol[0m[0m
+[0m[[0minfo[0m] [0m[32m- Fail Delete a knol[0m[0m
+[0m[[0minfo[0m] [0m[32m- Search a knol[0m[0m
+[0m[[0minfo[0m] [0m[32m- Fail Search a knol[0m[0m
+[0m[[0minfo[0m] [0m[32m- update a knol[0m[0m
+[0m[[0minfo[0m] [0m[32m- FAIL update a knol[0m[0m
+[0m[[0minfo[0m] [0m[32m- get list of knol[0m[0m

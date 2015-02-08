@@ -1,0 +1,10 @@
+[0m[[0minfo[0m] [0m[32mSessionRepoImplTest:[0m[0m
+[0m[[0minfo[0m] [0m[32m- Create a knol[0m[0m
+[0m[[0minfo[0m] [0m[32m- FAIL Create a knol[0m[0m
+[0m[[0minfo[0m] [0m[32m- Search a knol Session[0m[0m
+[0m[[0minfo[0m] [0m[32m- FAIL Search a knol Session[0m[0m
+[0m[[0minfo[0m] [0m[32m- Delete a knol Session[0m[0m
+[0m[[0minfo[0m] [0m[32m- FAIL Delete a knol Session[0m[0m
+[0m[[0minfo[0m] [0m[32m- update a knol Session[0m[0m
+[0m[[0minfo[0m] [0m[32m- Fail update a knol Session[0m[0m
+[0m[[0minfo[0m] [0m[32m- get list of knol[0m[0m
