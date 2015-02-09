@@ -5,7 +5,9 @@ import com.knol.core._
 import com.knol.db.connection.DBConnection
 
 class KnolRepoImpl extends DBConnection with KnolRepo {
-  
+  /**
+   * create method is to insert a new row in table.
+   */
   def create(knolx: Knol): Option[Int] = {
     val conn: Option[Connection] = gotConnection()
     conn match {
@@ -32,6 +34,9 @@ class KnolRepoImpl extends DBConnection with KnolRepo {
       case None => None
     }
   }
+  /**
+   * deleteKnolderByID is used to delete a row by passing ID as an argument.
+   */
   def deleteKnolderByID(id: Int): Option[Int] = {
     val conn: Option[Connection] = gotConnection()
     conn match {
@@ -53,6 +58,9 @@ class KnolRepoImpl extends DBConnection with KnolRepo {
       case None => None
     }
   }
+  /**
+   * searchKnolderByID is used to search a row by using ID.
+   */
   def searchKnolderByID(id: Int): Option[Knol] = {
     val conn: Option[Connection] = gotConnection()
     conn match {
@@ -76,6 +84,9 @@ class KnolRepoImpl extends DBConnection with KnolRepo {
       case None =>  None
     }
   }
+  /**
+   * updateKnolder is used to make modification in Rows.
+   */
   def updateKnolder(knolx: Knol): Option[Int] = {
     val conn: Option[Connection] = gotConnection()
     conn match {
@@ -99,6 +110,9 @@ class KnolRepoImpl extends DBConnection with KnolRepo {
       case None => None
     }
   }
+  /**
+   * getList is used to get all rows from table knol.
+   */
   def getList(): Option[scala.collection.mutable.MutableList[Knol]] = {
     val conn: Option[Connection] = gotConnection()
     conn match {

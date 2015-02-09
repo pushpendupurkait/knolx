@@ -17,7 +17,7 @@
 [0m[[0minfo[0m] [0mCompiling 7 Scala sources to /home/knoldus/Projects/knolx/target/scala-2.11/classes...[0m
 [0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.11.4[0m
 [0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.11.4[0m
-[0m[[0mdebug[0m] [0mRunning cached compiler 64350a8, interfacing (CompilerInterface) with Scala compiler version 2.11.4[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 45a7bff, interfacing (CompilerInterface) with Scala compiler version 2.11.4[0m
 [0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
 [0m[[0mdebug[0m] [0m	-Xplugin:/home/knoldus/.ivy2/cache/org.scoverage/scalac-scoverage-plugin_2.11/jars/scalac-scoverage-plugin_2.11-1.0.4.jar[0m
 [0m[[0mdebug[0m] [0m	-P:scoverage:dataDir:/home/knoldus/Projects/knolx/target/scala-2.11/scoverage-data[0m
@@ -26,7 +26,7 @@
 [0m[[0mdebug[0m] [0m	/home/knoldus/java/jdk1.7.0_71/jre/lib/resources.jar:/home/knoldus/java/jdk1.7.0_71/jre/lib/rt.jar:/home/knoldus/java/jdk1.7.0_71/jre/lib/sunrsasign.jar:/home/knoldus/java/jdk1.7.0_71/jre/lib/jsse.jar:/home/knoldus/java/jdk1.7.0_71/jre/lib/jce.jar:/home/knoldus/java/jdk1.7.0_71/jre/lib/charsets.jar:/home/knoldus/java/jdk1.7.0_71/jre/lib/jfr.jar:/home/knoldus/java/jdk1.7.0_71/jre/classes:/home/knoldus/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.4.jar[0m
 [0m[[0mdebug[0m] [0m	-classpath[0m
 [0m[[0mdebug[0m] [0m	/home/knoldus/Projects/knolx/target/scala-2.11/classes:/home/knoldus/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.21.jar:/home/knoldus/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar:/home/knoldus/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.0.13.jar:/home/knoldus/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.0.13.jar:/home/knoldus/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.5.jar:/home/knoldus/.ivy2/cache/org.scoverage/scalac-scoverage-runtime_2.11/jars/scalac-scoverage-runtime_2.11-1.0.4.jar:/home/knoldus/.ivy2/cache/org.scoverage/scalac-scoverage-plugin_2.11/jars/scalac-scoverage-plugin_2.11-1.0.4.jar:/home/knoldus/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.1.jar[0m
-[0m[[0mdebug[0m] [0mScala compilation took 7.794484793 s[0m
+[0m[[0mdebug[0m] [0mScala compilation took 7.29886764 s[0m
 [0m[[0mdebug[0m] [0mInvalidating /home/knoldus/Projects/knolx/src/main/scala/com/knol/core/impl/KnolRepoImpl.scala...[0m
 [0m[[0mdebug[0m] [0mInvalidating (transitively) by inheritance from /home/knoldus/Projects/knolx/src/main/scala/com/knol/core/impl/KnolRepoImpl.scala...[0m
 [0m[[0mdebug[0m] [0mInitial set of included nodes: Set(/home/knoldus/Projects/knolx/src/main/scala/com/knol/core/impl/KnolRepoImpl.scala)[0m

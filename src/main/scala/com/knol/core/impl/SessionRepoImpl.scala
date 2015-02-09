@@ -9,7 +9,9 @@ import org.slf4j.LoggerFactory
 import org.omg.CORBA.Request
 
 class SessionRepoImpl extends SessionRepo with DBConnection {
-  
+  /**
+   * create is used to insert a new row in table.
+   */
   def create(knolx: Knol): Option[Int] = {
     val conn: Option[Connection] = gotConnection()
     conn match {
@@ -36,6 +38,9 @@ class SessionRepoImpl extends SessionRepo with DBConnection {
       case None => None
     }
   }
+  /**
+   * searchSessionByID is used to search any row by using ID.
+   */
   def searchSessionByID(id: Int): Option[Knolx] = {
     val dateField = "2001/02/02"
     val logger = LoggerFactory.getLogger(this.getClass)
@@ -61,6 +66,9 @@ class SessionRepoImpl extends SessionRepo with DBConnection {
       case None => None
     }
   }
+  /**
+   * createNewSession is used to insert a row in Table knolx.
+   */
   def createNewSession(knolx: Knolx): Option[Int] = {
     val conn: Option[Connection] = gotConnection()
     conn match {
@@ -86,6 +94,9 @@ class SessionRepoImpl extends SessionRepo with DBConnection {
       case None => None
     }
   }
+  /**
+   * deleteSessionByID is used to delete a row from table knolx using ID 
+   */
   def deleteSessionByID(id: Int): Option[Int] = {
     val conn: Option[Connection] = gotConnection()
     conn match {
@@ -107,6 +118,9 @@ class SessionRepoImpl extends SessionRepo with DBConnection {
       case None => None
     }
   }
+  /**
+   * deleteSessionByID is used to update a row from table knolx using ID
+   */
   def updateSession(knolx: Knolx): Option[Int] = {
     val conn: Option[Connection] = gotConnection()
     conn match {
@@ -130,6 +144,9 @@ class SessionRepoImpl extends SessionRepo with DBConnection {
       case None => None
     }
   }
+  /**
+   * getList is used to get all rows from knolx Table.
+   */
   def getList(): Option[scala.collection.mutable.MutableList[Knolx]] = {
     val conn: Option[Connection] = gotConnection()
     conn match {

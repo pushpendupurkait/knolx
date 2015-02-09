@@ -8,6 +8,9 @@ import com.knol.core.Knolx
 import com.knol.core.Knol
 
 class KnolSessionRepoImpl extends DBConnection with KnolSessionRepo {
+  /**
+   * joinedSelect is used to get rows from two tables(knol and knolx)  
+   */
   def joinedSelect(id: Int): Option[JoinedKnol] = {
     val conn: Option[Connection] = gotConnection
     conn match {

@@ -6,6 +6,9 @@ import java.sql.DriverManager
 import org.slf4j.LoggerFactory
 
 import com.typesafe.config.ConfigFactory
+/**
+ * DBConnection is used to establish connection in database knol.  
+ */
 trait DBConnection {
   val config = ConfigFactory.load()
   val url = config.getString("db.url")
