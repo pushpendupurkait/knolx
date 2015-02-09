@@ -9,14 +9,14 @@ import com.knol.core.Knol
 
 class KnolSessionRepoImpl extends DBConnection with KnolSessionRepo {
   /**
-   * joinedSelect is used to get rows from two tables(knol and knolx)  
+   * joinedSelect is used to get rows from two tables(knol and knolx)
    */
   def joinedSelect(id: Int): Option[JoinedKnol] = {
     val conn: Option[Connection] = gotConnection
     conn match {
       case Some(conn) => {
         try {
-          val query = "select knol.id,knolx.id,knol.name,knol.email,knol.mobile,knolx.date from knol, knolx where "+ id +"=knolx.knol_id "
+          val query = "select knol.id,knolx.id,knol.name,knol.email,knol.mobile,knolx.date from knol, knolx where " + id + "=knolx.knol_id "
           val stmt = conn.createStatement()
           val result = stmt.executeQuery(query)
           result.next()

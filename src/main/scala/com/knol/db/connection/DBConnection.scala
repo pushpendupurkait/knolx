@@ -7,7 +7,7 @@ import org.slf4j.LoggerFactory
 
 import com.typesafe.config.ConfigFactory
 /**
- * DBConnection is used to establish connection in database knol.  
+ * DBConnection is used to establish connection in database knol.
  */
 trait DBConnection {
   val config = ConfigFactory.load()
@@ -21,11 +21,11 @@ trait DBConnection {
       Class.forName(driver)
       var conn = DriverManager.getConnection(url, usr, password)
       Some(conn)
-      } catch {
-          case ex: Exception => {
-            logger.error("exception occured", ex)
-            None
-          }
-        }
+    } catch {
+      case ex: Exception => {
+        logger.error("exception occured", ex)
+        None
+      }
+    }
   }
 }

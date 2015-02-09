@@ -21,7 +21,7 @@ class SessionRepoImpl extends SessionRepo with DBConnection {
           val name = knolx.name
           val email = knolx.email
           val mobile = knolx.mobile
-          val query = "insert into knol(name,email,mobile,id) values('" + name + "','" + email + "','" + mobile + "',"+id+")"
+          val query = "insert into knol(name,email,mobile,id) values('" + name + "','" + email + "','" + mobile + "'," + id + ")"
           val stmt = conn.prepareStatement(query, Statement.RETURN_GENERATED_KEYS)
           stmt.executeUpdate
           val rs = stmt.getGeneratedKeys
@@ -53,7 +53,7 @@ class SessionRepoImpl extends SessionRepo with DBConnection {
           val rs: ResultSet = stmt.executeQuery(query)
           rs.next()
           val topic = rs.getString("topic")
-          val knol_id =rs.getInt("knol_id")
+          val knol_id = rs.getInt("knol_id")
           val id_knolx = rs.getInt("id")
           Some(Knolx(topic, dateField, knol_id, Some(id_knolx)))
         } catch {
@@ -82,7 +82,7 @@ class SessionRepoImpl extends SessionRepo with DBConnection {
           stmt.executeUpdate
           val rs = stmt.getGeneratedKeys
           rs.next()
-          
+
           Some(rs.getInt(1))
         } catch {
           case ex: Exception => {
@@ -95,7 +95,7 @@ class SessionRepoImpl extends SessionRepo with DBConnection {
     }
   }
   /**
-   * deleteSessionByID is used to delete a row from table knolx using ID 
+   * deleteSessionByID is used to delete a row from table knolx using ID
    */
   def deleteSessionByID(id: Int): Option[Int] = {
     val conn: Option[Connection] = gotConnection()
@@ -106,7 +106,7 @@ class SessionRepoImpl extends SessionRepo with DBConnection {
           val stmt = conn.prepareStatement(query, Statement.KEEP_CURRENT_RESULT)
           val rs = stmt.executeUpdate();
           print(rs + " row succesfully deleted")
-          require(rs>0)
+          require(rs > 0)
           Some(rs)
         } catch {
           case ex: Exception => {
@@ -129,10 +129,10 @@ class SessionRepoImpl extends SessionRepo with DBConnection {
           val topic = knolx.topic
           val date = knolx.date
           val id = knolx.knol_id
-          val query = "update knolx set topic='"+ topic +"',date='" + date + "' where id=" + knolx.knol_id
+          val query = "update knolx set topic='" + topic + "',date='" + date + "' where id=" + knolx.knol_id
           val stmt = conn.createStatement()
           val result = stmt.executeUpdate(query)
-          require(result>0)
+          require(result > 0)
           Some(result)
         } catch {
           case ex: Exception => {
